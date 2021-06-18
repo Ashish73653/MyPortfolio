@@ -15,6 +15,22 @@
 </head>
 
 <body>
+    <div class='spinner-wrapper'>
+        <div class="loader">
+            <div class="inner one"></div>
+            <div class="inner two"></div>
+            <div class="inner three"></div>
+        </div>
+    </div>
+
+    <script>
+    let spinnerWrapper = document.querySelector('.spinner-wrapper');
+
+    window.addEventListener('load', function () {
+    // spinnerWrapper.style.display = 'none';
+    spinnerWrapper.parentElement.removeChild(spinnerWrapper);
+    });
+    </script>
     <header>
         <div class="container">
             <nav class="flex items-center  justify-between">
