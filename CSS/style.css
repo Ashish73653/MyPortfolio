@@ -216,3 +216,46 @@ section.skills .card-wrapper .card:hover{
 section.skills .card-wrapper .card:hover h2 ,section.skills .card-wrapper .card:hover p{
     color: var(--pure);
 }
+
+
+section.certifications{
+    background: var(--light);
+}
+section.certifications .card-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 2rem;
+    grid-row-gap: 6rem;
+}
+section.certifications .card-wrapper .card{
+    background: var(--pure);
+    padding: 1rem 1rem;
+    position: relative;
+    padding-top: 4rem;
+    text-align: center;
+    transition: all .3s ease;
+}
+section.certifications .card-wrapper .card img{
+    position: absolute;
+    top: -3.5rem;
+    left: 50%;
+    transform: translate(-50%);
+    height: 110px;
+    width: 200px;
+}
+section.certifications .card-wrapper .card h2{
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+section.certifications .card-wrapper .card p{
+    font-family: 'Lato',sans-serif;
+    color: var(--ternary);
+    line-height: 1.3rem;
+}
+section.certifications .card-wrapper .card:hover{
+    background: var(--dark2);
+}
+section.certifications .card-wrapper .card:hover h2 ,section.certifications .card-wrapper .card:hover p{
+    color: var(--pure);
+}
