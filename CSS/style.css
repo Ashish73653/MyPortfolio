@@ -1,7 +1,7 @@
 @import 'utilities.css';
 :root{
     --primary:#3DCFD3;
-    --dark:#161616;
+    --dark:black;
     --pure:#FFFFFF;
     --ternary:#898989;
     --light:#F2F2F2;
@@ -24,6 +24,25 @@ header{
     padding: 0 15px;
     margin: 0 auto;
 }
+  #navbar__logo {
+    background: #9CECFB;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #0052D4, #65C7F7, #9CECFB);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #0052D4, #65C7F7, #9CECFB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
+    background-size: 100%;
+    font-family: 'Chela One', cursive;
+    font-weight: 600;
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 2rem;
+  }
+  
 
 header nav .left a{
     color:var(--pure);
@@ -33,7 +52,16 @@ header nav .left a{
     transition: all .3s ease;
 }
 header nav .left a:hover{
-    color:var(--primary);
+    /* color:var(--primary); */
+    background: #9CECFB;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #0052D4, #65C7F7, #9CECFB);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #0052D4, #65C7F7, #9CECFB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: 100%;
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
 }
 header nav{
     padding: 2rem 0;
@@ -45,15 +73,24 @@ header nav .branding{
     padding: 3rem 0;
 }
 .hero .left img{
-    width: 280px;
+    width: 360px;
 }
 .hero .right{
     color: var(--pure);
 }
 .hero .right h6{
     font-size: 1.6rem;
-    color: var(--primary);
+    /* color: var(--primary); */
     margin-bottom: 0.5rem;
+    background: #9CECFB;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #0052D4, #65C7F7, #9CECFB);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #0052D4, #65C7F7, #9CECFB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: 100%;
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
 }
 .hero .right h1{
     font-size: 3.2rem;
@@ -67,7 +104,58 @@ header nav .branding{
 .hero .right p{
     line-height: 1.9;
     margin-bottom: 2rem;
+    margin-top: -1.8rem;
 }
 .hero .right{
     margin-top: -7rem;
+}
+
+
+section{
+    padding: 6rem 0;
+}
+section.about .about-me-img{
+    height: 450px;
+    border-radius: 20px;
+}
+section .about h1{
+    margin-bottom: 1rem;
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+section.about h1 span{
+    color: var(--primary);
+}
+section .about h3{
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    font-weight: 400;
+}
+section.about p{
+    font-family: 'Lato', sans-serif;
+    color: var(--ternary);
+    line-height: 1.9;
+    margin-bottom: 2rem;
+}
+section.about .social{
+    display: flex;
+}
+section.about .social a{
+    background: var(--light);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    margin-right: 0.6rem;
+    transition: all .3s ease;
+}
+section.about .social a:hover{
+    background: var(--primary);
+}
+section.about .social a img{
+    width: 100%;
+    height: 100%;
+    padding: 0.5rem;
 }

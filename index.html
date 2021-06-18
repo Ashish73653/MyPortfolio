@@ -5,10 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Portfolio</title>
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="CSS/style.css">
 </head>
 
@@ -18,37 +20,65 @@
             <nav class="flex items-center  justify-between">
                 <div class="left flex items-center">
                     <div class="branding">
-                        <img src="images/logo.svg" alt="logo">
+                        <!-- <img src="images/logo.svg" alt="logo"> -->
+                        <a href="#home" id="navbar__logo">PORTFOLIO</a>
                     </div>
                     <div>
-                        <a href="#">Home</a>
-                        <a href="#">About</a>
-                        <a href="#">Skills</a>
-                        <a href="#">Projects</a>
-                        <a href="#">Blog</a>
+                        <a href="#home">Home</a>
+                        <a href="#about">About</a>
+                        <a href="#skills">Skills</a>
+                        <a href="#projects">Projects</a>
+                        <a href="#">Certification</a>
                     </div>
                 </div>
                 <div class="right">
                     <button class="btn btn-primary">Connect</button>
                 </div>
             </nav>
-            <div class="hero flex items-center justify-between">
+            <div class="hero flex items-center justify-between" id="home">
                 <div class="left flex-1 flex justify-center">
                     <img src="images/man.png" alt="man">
                 </div>
                 <div class="right flex-1">
                     <h6>Ashish Singh</h6>
-                    <h1>I'm a Creative <span>Designer</span></h1>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis, odio incidunt? Recusandae
-                        assumenda, cum dolores repellendus suscipit dolorum minima eius velit, provident nobis
-                        laboriosam natus amet hic enim sapiente sit?</p>
-                        <div>
-                            <button class="btn btn-secondary">Download CV</button>
-                        </div>
+                    <h1>I'm an Engineering <span>Student</span></h1>
+                    <p>My three major interests and passions are web development , programming and Music, and I believe
+                        that there is a creative fusion between all these disciplines. I engage wholeheartedly in these
+                        areas both in my school courses and out of school, and hope that I will be able to continue
+                        doing so on my chosen course and in the extra-curricular opportunities at university..</p>
+                    <div>
+                        <a href="images/facebook.svg" download><button class="btn btn-secondary">Download RESUME</button></a>
+                    </div>
                 </div>
             </div>
         </div>
     </header>
+
+    <section class="about" id="about">
+        <div class="container flex items-center">
+            <div class="flex-1">
+                <!-- <img class="about-me-img" src="images/avatar.jpeg" alt="man"> -->
+                <img class="about-me-img" src="images/man-2.png" alt="man">
+            </div>
+            <div class="flex-1">
+                <h1>About <span>Me</span></h1>
+                <h3>Hello! i'm Ashish singh.</h3>
+                <p>Hi, I am Ashish singh , hardworking engineering graduate in computer science engineering with
+                    an overall cgpa of 8.13 SGPA (upto 3rd semester) .The 4 years during my degree has taught me a
+                    lot about the importance
+                    of upgrading my skills with the changing world so , along with my degree I added many relevant
+                    skills like HTML,CSS,JAVASCRIPT,REACT JS,NODE JS,mongoDB,MySQL, JAVA, ANDROID DEVELOPMENT.
+                    Created many projects with these skills , and also these helped me a lot in my final year
+                    project called ________ . It was during the college time only I learnt that I am a good follower</p>
+                <div class="social">
+                    <a href="https://www.facebook.com/profile.php?id=100009849559107" target="_blank-page"><img src="images/facebook.svg" alt="Facebook"></a>
+                    <a href="https://www.instagram.com/ash1sh_1hakur10/?hl=en" target="_blank-page"><img src="images/instagram.svg" alt="instagram"></a>
+                    <a href="https://www.linkedin.com/in/ashish-singh-1771091a5/" target="_blank-page"><img src="images/linkedin.svg" alt="linkedin"></a>
+                    <a href="https://github.com/Learner4797" target="_blank-page"><img src="images/github.svg" alt="github"></a>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
 
 </html>
