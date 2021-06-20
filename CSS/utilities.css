@@ -20,7 +20,7 @@
 }
 .btn-primary{
     background: var(--primary);
-    color: var(--secondary);
+    color: var(--dark);
 }
 .btn-primary:hover{
     background: transparent;
@@ -34,7 +34,7 @@
 }
 .btn-secondary:hover{
     background: var(--primary);
-    color: var(--secondary);
+    color: var(--dark);
 }
 .flex-1{
     flex: 1;

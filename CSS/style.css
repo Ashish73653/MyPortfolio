@@ -10,6 +10,7 @@
 }
 body{
     font-family: 'Poppins',sans-serif;
+    
 }
 *{
     padding: 0;
@@ -17,7 +18,38 @@ body{
     box-sizing: border-box;
     -webkit-font-smoothing:antialiased;
 }
-
+html{
+    scroll-behavior: smooth;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+::-webkit-scrollbar {
+    width: 3px;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
+/* Optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+    background: red;
+}
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background:transparent;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+  }
+#myBtn img{
+    width: 30px;
+    height: 30px;
+}
 header{
     background: var(--dark);
     clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 87%, 0 100%);
@@ -26,6 +58,26 @@ header{
     max-width: 1152px;
     padding: 0 15px;
     margin: 0 auto;
+}
+@media(min-width:576px){
+    .container{
+        max-width: 548px;
+    }
+}
+@media(min-width:768px){
+    .container{
+        max-width: 720px;
+    }
+}
+@media(min-width:992px){
+    .container{
+        max-width: 960px;
+    }
+}
+@media(min-width:1200px){
+    .container{
+        max-width: 1152px;
+    }
 }
   #navbar__logo {
     background: #9CECFB;  /* fallback for old browsers */
@@ -164,7 +216,7 @@ section.about .social a img{
 }
 
 .section-heading{
-    color: var(--secondary);
+    color: var(--dark);
     text-align: center;
     margin-bottom: 1rem;
     line-height: 0.5;
@@ -175,7 +227,7 @@ section.about .social a img{
 .section-heading + p{
     color: var(--ternary);
     font-family: 'Lato',sans-serif;
-    margin-bottom: 8rem;
+    margin-bottom: 5rem;
     text-align: center;
 }
 section.skills{
@@ -245,7 +297,7 @@ section.certifications .card-wrapper .card img{
     width: 200px;
 }
 section.certifications .card-wrapper .card h2{
-    font-weight: 600;
+    font-weight: 400;
     font-size: 1.2rem;
     margin-bottom: 0.5rem;
 }
@@ -259,4 +311,280 @@ section.certifications .card-wrapper .card:hover{
 }
 section.certifications .card-wrapper .card:hover h2 ,section.certifications .card-wrapper .card:hover p{
     color: var(--pure);
+}
+
+site-main-wrapper{
+    position: relative;
+}
+.hamburger{
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    z-index: 11;
+    background: none;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+.hamburger img{
+    width: 30px;
+}
+.mobile-nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1001;
+    background: var(--light);
+    width: 100%;
+    height: 100%;
+    padding: 2rem;
+    padding-top: 5rem;
+    transform: translateX(-100%);
+    transition: all .5s ease-in-out;
+}
+.open{
+    transform: translateX(0);
+}
+.times{
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.times img{
+    width: 30px;
+}
+.mobile-nav ul{
+    list-style-type: none;
+}
+.mobile-nav ul li a{
+    color: var(--dark);
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+section.projects{
+    background-color: var(--light);
+}
+
+section.projects .card-wrapper{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 2rem;
+}
+section.projects .card-wrapper .card{
+    position: relative;
+    height: 250px;
+}
+section.projects .card-wrapper .card .overlay{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(61,207,211,0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: var(--pure);
+    opacity: 0;
+    transition: all .3s ease;
+}
+section.projects .card-wrapper .card:hover .overlay{
+    opacity: 1;
+}
+
+section.projects .card-wrapper .card .overlay a{
+    color: var(--secondary);
+    text-decoration: none;
+}
+section.projects .card-wrapper .card img{
+    height: 100%;
+    width: 100%;
+}
+
+footer{
+    background: var(--dark);
+    text-align: center;
+    padding: 5rem 0;
+}
+/* footer .footer-logo{
+    margin-bottom: 3rem;
+    width: 150px;
+} */
+footer .footer-socials a{
+    margin-right: 1rem;
+    
+}
+footer .copyright{
+    color: var(--ternary);
+}
+footer .footer-socials{
+    margin-bottom: 3rem;
+    margin-right: -1rem;
+}
+
+@media (min-width:1024px){
+    .hamburger{
+        display: none;
+    }
+}
+@media (max-width:1024px){
+    header{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 75% 90%, 0 100%);
+    }
+    header #main-nav{
+        display: none;
+    }
+    .hero .left img{
+        width: 280px;
+    }
+    .hero{
+        padding-top: 10rem;
+    }
+    .hero .right h1{
+        font-size: 2rem;
+    }
+    .hero .right h6{
+        font-size: 1.4rem;
+        padding-top: 40px;
+    }
+    .hero .right p{
+        font-size: 1rem;
+        line-height: normal;
+    }
+    .btn{
+        margin-bottom: 30px;
+        width: 120px;
+        text-align: center;
+        padding: 1rem 1rem;
+    }
+    section.about .about-me-img{
+        width: 330px;
+        height: 330px;
+    }
+    .container{
+        padding: 0 8px;
+    }
+    section.skills .card-wrapper{
+        grid-template-columns: repeat(2,1fr);
+    }
+    section.skills .card-wrapper .card img{
+        width: 84px;
+        height: 90px;
+    }
+    section.projects .card-wrapper{
+        grid-template-columns: repeat(2,1fr);
+    }
+    footer{
+        padding: 3rem 0;
+    }
+    footer .footer-socials{
+        margin-right: 0;
+    }
+}
+@media(max-width:790px){
+    header{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 72% 92%, 0 100%);
+    }
+    .hero{
+        padding: 1.6rem 0rem;
+        flex-direction: column;
+        padding-top: 2rem;
+    }
+    .about-inner-wrap{
+        flex-direction: column;
+    }
+    section.skills .card-wrapper{
+        grid-template-columns: repeat(1,1fr);
+    }
+    section.certifications .card-wrapper{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .hero .left img{
+        width: 350px;
+    }
+    .hero .right{
+        margin-top: -23rem;
+    }
+    .hero .right p{
+        margin-bottom: 1rem;
+        font-size: 0.9rem;
+        font-weight: 800;
+        background: #fffc00;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #ffffff, #fffc00);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #ffffff, #fffc00); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        background-size: 100%;
+        background-clip: border-box;
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -moz-text-fill-color: transparent;
+    }
+    .hero .right h6{
+        font-size: 2rem;
+    }
+    .hero .right h1{
+        font-size: 2.2rem;
+        font-weight: 600;
+    }
+    .hamburger{
+        top: 20px;
+        left: 20px;
+    }
+    .hamburger img{
+        width: 20px;
+    }
+    .btn{
+        width: 90px;
+        height: 40px;
+        padding: .5rem .5rem;
+        margin-top: -10px;
+    }
+    .times img{
+        width: 20px;
+    }
+    section{
+        padding: 1rem 0;
+    }
+    .about .right{
+        text-align: center;
+    }
+    section.about .about-me-img{
+        height: 200px;
+        width: 200px;
+    }
+    section.about p{
+        font-size: .9rem;
+        line-height: 1.6;
+    }
+    section.about .social{
+        justify-content: center;
+    }
+    section.skills .card-wrapper .card img{
+        width: 50px;
+        height: 58px;
+    }
+    section.skills .card-wrapper .card{
+        padding: 1rem 1rem;
+        padding-top: 1rem;
+    }
+    section.skills .card-wrapper{
+        grid-row-gap: 4rem;
+    }
+    section.projects .card-wrapper .card{
+        height: 148px;
+    }
+    .section-heading + p{
+        margin-bottom: 6rem;
+    }
+    footer{
+        padding: 2rem 0;
+    }
+    footer .copyright{
+        font-size: .6rem;
+    }
 }
