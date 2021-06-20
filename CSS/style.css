@@ -512,7 +512,7 @@ footer .footer-socials{
     }
     .hero .right p{
         margin-bottom: 1rem;
-        font-size: 0.9rem;
+        font-size: 1.1rem;
         font-weight: 800;
         background: #fffc00;  /* fallback for old browsers */
         background: -webkit-linear-gradient(to right, #ffffff, #fffc00);  /* Chrome 10-25, Safari 5.1-6 */
@@ -526,6 +526,7 @@ footer .footer-socials{
     }
     .hero .right h6{
         font-size: 2rem;
+        padding-top: 160px;
     }
     .hero .right h1{
         font-size: 2.2rem;
@@ -548,7 +549,7 @@ footer .footer-socials{
         width: 20px;
     }
     section{
-        padding: 1rem 0;
+        padding: 3rem 0;
     }
     .about .right{
         text-align: center;
@@ -558,7 +559,7 @@ footer .footer-socials{
         width: 200px;
     }
     section.about p{
-        font-size: .9rem;
+        font-size: 1.29rem;
         line-height: 1.6;
     }
     section.about .social{
