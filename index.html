@@ -12,25 +12,53 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="CSS/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </head>
 
 <body>
-    
-    <div class="site-main-wrapper">
-        <button onclick="topFunction()" id="myBtn" title="Go to top"><img src="images/up.svg" alt="up"></button>
-        <button class="hamburger">
-            <img src="images/hamberger.svg" alt="">
-        </button>
+    <div class='spinner-wrapper'>
+        <div class="loader">
+            <div class="loader-inner">
+                <div class="loader-line-wrap">
+                    <div class="loader-line"></div>
+                </div>
+                <div class="loader-line-wrap">
+                    <div class="loader-line"></div>
+                </div>
+                <div class="loader-line-wrap">
+                    <div class="loader-line"></div>
+                </div>
+                <div class="loader-line-wrap">
+                    <div class="loader-line"></div>
+                </div>
+                <div class="loader-line-wrap">
+                    <div class="loader-line"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>    let spinnerWrapper = document.querySelector('.spinner-wrapper');
 
+        window.addEventListener('load', function () {
+            // spinnerWrapper.style.display = 'none';
+            spinnerWrapper.parentElement.removeChild(spinnerWrapper);
+        });</script>
+    <div class="site-main-wrapper">
         <div class="mobile-nav">
-            <button class="times"><img src="images/times.svg" alt="times"></button>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#certifications">Certification</a></li>
-                <li><a href="#projects">Projects</a></li>
-            </ul>
+            <div id="navbar">
+                <div id="mySidenav" class="sidenav">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <div class="profimg"><img src="images/avatar.jpeg" alt="avatar"></div>
+                    <a href="#home" onclick="closeNav()">Home</a>
+                    <a href="#about" onclick="closeNav()">About</a>
+                    <a href="#skills" onclick="closeNav()">Skills</a>
+                    <a href="#certifications" onclick="closeNav()">Certification</a>
+                    <a href="#projects" onclick="closeNav()">Projects</a>
+                </div>
+                <span onclick="openNav()" class="menu"><img src="images/hamberger.svg" alt=""></span>
+            </div>
         </div>
         <header>
             <div class="container">
@@ -66,7 +94,8 @@
                             areas both in my school courses and out of school, and hope that I will be able to continue
                             doing so on my chosen course and in the extra-curricular opportunities at university..</p>
                         <div>
-                            <a href="images/Resume/AshishSingh_1902023_CSE.docx" download><button class="btn btn-secondary">
+                            <a href="images/Resume/AshishSingh_1902023_CSE.docx" download><button
+                                    class="btn btn-secondary">
                                     RESUME</button></a>
                         </div>
                     </div>
@@ -106,7 +135,7 @@
         </section>
         <section class="skills" id="skills">
             <div class="container">
-                <h1 class="section-heading"><span>My</span> Skills</h1>
+                <h1 class="section-heading" style="color: white;"><span>My</span> Skills</h1>
                 <p>Schooling doesn't assure employment but skill does.</p>
                 <div class="card-wrapper">
                     <div class="card">
@@ -206,14 +235,16 @@
                     <div class="card">
                         <a href="https://www.awseducate.com/student/ViewCertificateOfCompletion?jrId=a0z1N000006qNrVQAU"
                             target="_blank-page"><img src="images/certificates/web development engineer.jpg" alt=""></a>
-                        <h2>Web Development Engineer</h2>
+                        <h2>Web Development Engineer From AWS</h2>
                     </div>
                     <div class="card">
-                        <a href="#" target="_blank-page"><img src="images/brush.svg" alt=""></a>
+                        <a href="#" target="_blank-page"><img src="images/certificates/web development engineer.jpg"
+                                alt=""></a>
                         <h2>Java</h2>
                     </div>
                     <div class="card">
-                        <a href="#" target="_blank-page"><img src="images/brush.svg" alt=""></a>
+                        <a href="#" target="_blank-page"><img src="images/certificates/web development engineer.jpg"
+                                alt=""></a>
                         <h2>Android developement</h2>
                     </div>
                 </div>
@@ -227,23 +258,25 @@
                     <div class="card">
                         <div class="overlay">
                             <span>Category</span>
-                            <a href="#">Web development</a>
+                            <a href="https://github.com/Learner4797/MyPortfolio.git" target="_blank-page">Web
+                                development - Html ,css.javascript</a>
                         </div>
-                        <img src="images/ph-1.png" alt="">
+                        <img src="images/portfolio.png" alt="">
                     </div>
                     <div class="card">
                         <div class="overlay">
-                            <span>Category</span>
-                            <a href="#">Web development</a>
+                            <span>Java and MySQL</span>
+                            <a href="https://github.com/Learner4797/StudentManagementSystem.git">Student Management
+                                System</a>
                         </div>
-                        <img src="images/ph-1.png" alt="">
+                        <img src="images/studentMS.PNG" alt="">
                     </div>
                     <div class="card">
                         <div class="overlay">
-                            <span>Category</span>
-                            <a href="#">Web development</a>
+                            <span>Java and MySQL</span>
+                            <a href="https://github.com/Learner4797/bookManagementSystem.git">book Management System</a>
                         </div>
-                        <img src="images/ph-1.png" alt="">
+                        <img src="images/BookMS.PNG" alt="">
                     </div>
                     <div class="card">
                         <div class="overlay">
@@ -270,7 +303,8 @@
             </div>
         </section>
         <footer>
-            <a href="#home" id="navbar__logo" style="text-align: center;justify-content: center;margin-bottom: 3rem;">PORTFOLIO</a>
+            <a href="#home" id="navbar__logo"
+                style="text-align: center;justify-content: center;margin-bottom: 3rem;">PORTFOLIO</a>
             <div class="footer-socials">
                 <a href="https://www.facebook.com/profile.php?id=100009849559107" target="_blank-page"><img
                         src="images/facebook.svg" alt="Facebook"></a>
@@ -278,8 +312,8 @@
                         src="images/instagram.svg" alt="instagram"></a>
                 <a href="https://www.linkedin.com/in/ashish-singh-1771091a5/" target="_blank-page"><img
                         src="images/linkedin.svg" alt="linkedin"></a>
-                <a href="https://github.com/Learner4797" target="_blank-page"><img src="images/github.png"
-                        alt="github" style="width: 45px;"></a>       
+                <a href="https://github.com/Learner4797" target="_blank-page"><img src="images/github.png" alt="github"
+                        style="width: 45px;"></a>
             </div>
             <div class="copyright">
                 Copyright 2021 &copy; Ashish singh . All rights reserved.
