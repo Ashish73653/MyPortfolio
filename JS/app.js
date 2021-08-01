@@ -1,11 +1,11 @@
-let name = window.prompt("Enter your name...")
-let val = window.prompt("Enter your password");
-if(val==="4797"){
-  alert(`Hello ${name}`);
-} else{
-  alert("Get lost u idiot");
-  window.close();
-}
+// let name = window.prompt("Enter your name...")
+// let val = window.prompt("Enter your password");
+// if(val==="4797"){
+//   alert(`Hello ${name}`);
+// } else{
+//   alert("Get lost u idiot");
+//   window.close();
+// }
 
 function openNav() {
   document.getElementById("mySidenav").style.width = "250px";
