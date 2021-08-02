@@ -453,7 +453,10 @@ section.skills .card-wrapper .card p{
 }
 section.skills .card-wrapper .card:hover{
     /* background: var(--dark2); */
-    background-image: radial-gradient(#5433ff, #20bdff, #a5fecb);
+    background: #30E8BF;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #FF8235, #30E8BF);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #FF8235, #30E8BF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
 }
 section.skills .card-wrapper .card:hover h2 ,section.skills .card-wrapper .card:hover p{
     color: var(--pure);
@@ -500,13 +503,16 @@ section.certifications .card-wrapper .card p{
 }
 section.certifications .card-wrapper .card:hover{
     /* background: var(--pure); */
-    background-image: radial-gradient(#5433ff, #20bdff, #a5fecb);
+    background: #30E8BF;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #FF8235, #30E8BF);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #FF8235, #30E8BF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 section.certifications .card-wrapper .card:hover h2 ,section.certifications .card-wrapper .card:hover p{
     color: var(--dark);
 }
 
-site-main-wrapper{
+.site-main-wrapper{
     position: relative;
 }
 
@@ -529,7 +535,9 @@ section.projects .card-wrapper .card .overlay{
     top: 0;
     width: 100%;
     height: 100%;
-    background: rgba(61,207,211,0.9);
+    background: #30E8BF;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #FF8235, #30E8BF);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #FF8235, #30E8BF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     display: flex;
     justify-content: center;
     align-items: center;
